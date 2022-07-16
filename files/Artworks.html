@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+            * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-kerning: auto;
+        }
+        html {
+        font-size: 10pt;
+        line-height: 1.4;
+        font-weight: 400;
+        font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        }
+        body {
+        margin: 0;
+        background: #eee;
+        }
+        section {
+        height: 100vh;
+        background-image: url("Risen.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        }
+        section span {
+        margin: 0;
+        font-size: 400%;
+        text-align: center;
+        line-height: 1;
+        padding-top: calc(50vh - 20pt);
+        display: block;
+        font-weight: 700;
+        }
+        header {
+        width: 100%;
+        padding: 1em;
+        font-size: 140%;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        transition: opacity .2s ease-in-out;
+        text-align: center;
+        }
+        header h1 {
+        font-weight: 600;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        }
+        nav a {
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        opacity: .7;
+        padding: 0 .5em;
+        color: black;
+        transition: opacity .2s ease-in-out;
+        }
+        nav a:hover,
+        nav a:focus {
+        opacity: 1;
+        }
+        article {
+        margin: 5em auto 0;
+        padding: 1em;
+        font-size: 140%;
+        max-width: 800px;
+        background: white;
+        box-shadow: rgba(0,0,0,.05) 0 3px 10px;
+        }
+        article p {
+        margin: 0;
+        color: #333;
+        }
+        article p + p {
+        margin-top: .7em;
+        }
+        @media (min-width: 500px) {
+        header {
+        text-align: left;
+        }
+        nav {
+        float: right;
+        }
+        article {
+        margin: 3.5em auto 0;
+        padding: 2em;
+        }
+        }
+        @media (min-width: 800px) {
+        article {
+        margin: 3.5em auto;
+        }
+        }
+
+        /* And here's the magic! EQCSS.js required */
+        @element html, body and (min-scroll-y: 100vh) {
+        header {
+        position: fixed;
+        top: 0;
+        background: white;
+        box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+        }
+        }
+
+        body img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .about-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .about {
+            display: inline-block;
+            width: 40%;
+            vertical-align: middle;
+            text-align: left;
+        }
+        .about img {
+            width: 50%;
+            height: auto;
+        }
+        
+        footer {
+        display: inline-block;
+        }
+        footer {
+        display: inline-block;
+        text-align: center;
+        }
+
+.gallery-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border: 1px solid black;
+}
+
+div.gallery > div:first-of-type {
+    padding-top: 0%;
+}
+
+div.gallery-image img{
+  width: 100%;
+  aspect-ratio: 5/6;
+}
+
+#gallery-row {
+  clear: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.footer {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+        }
+</style>
+</head>
+<body>
+    <body>
+        <section>
+        </section>
+          <header>
+            <h1>Rai Manuel</h1>
+            <nav>
+              <a href="Home.html">Home</a>
+              <a href="Friends and Family.html">Family and Friends</a>
+              <a href="School.html">School</a>
+              <a href="Interests.html">Interests</a>
+              <a href=#>Artworks</a>
+            </nav>
+          </header>
+          <div class="about-container">
+            <article class="about">
+                <h1>Artworks</h1>
+  <div class="gallery-container">
+    <div class="gallery" id="gallery-row">
+      <div class="gallery-image">
+        <a target="_blank" href= "https://www.deviantart.com/chromaticrai/art/Aries-908372359">
+            <img src="Aries.png" alt="Cinque Terre" width="1500" height="1200" class="center">
+        </a>
+      </div>
+    <div class="desc">Part of the Original Characters of the Zodiac Series, Arista Metla Hamal represents the Aries Constellation</div>
+    </div>
+
+    <div class="gallery">
+    <div class="gallery-image">
+      <a target="_blank" href="https://www.deviantart.com/chromaticrai/art/Gemini-908371722">
+          <img src="Gemini.png" alt="Forest" width="600" height="400" class="center" >
+      </a>
+    </div>
+    <div class="desc">Part of the Original Characters of the Zodiac Series, Soleil Helena Pollux and Lucine Clytennia Castor representing the Gemini Constellation</div>
+    </div>
+
+    <div class="gallery" id="gallery-row">
+    <div class="gallery-image">
+    <a target="_blank" href="https://www.deviantart.com/chromaticrai/art/Tribute-for-Qinni-6-908300360">
+        <img src="Tribute for Qinni 6.jpg" alt="Forest" width="600" height="400" class="center">
+    </a>
+    </div>
+    <div class="desc">Here's a tribute I made a few years ago after she died. Qinni is an inspiration for my artworks until this day. May the Galaxies guide her</div>
+    </div>
+
+    <div class="gallery" >
+    <div class="gallery-image">
+    <a target="_blank" href="https://www.deviantart.com/chromaticrai/art/Annoyed-Drow-908491974">
+        <img src="inisnmanako1.jpg" alt="Annoyed Drow" width="600" height="400" class="center">
+    </a>
+    </div>
+    <div class="desc">This artwork is a test combination of both photography and digital illustration and I'm happy on how this turned out.</div>
+    </div>
+
+    <div class="gallery" id="gallery-row">
+    <div class="gallery-image">
+    <a target="_blank" href="https://www.deviantart.com/chromaticrai/art/Pisces-911081141">
+        <img src="Pisces.jpg" alt="Northern Lights" width="600" height="400" class="center">
+    </a>
+    </div>
+    <div class="desc">Kodo Atanari for the House of Pisces. As Delusional as he is, his imagination is impeccable.</div>
+    </div>
+
+    <div class="gallery">
+    <div class="gallery-image">
+    <a target="_blank" href="https://www.deviantart.com/chromaticrai/art/Pwyll-the-Wood-Elf-909832966">
+        <img src="Pwyll2.jpg" alt="Mountains" width="600" height="400" class="center">
+    </a>
+    </div>
+    <div class="desc">This is Pwyll my favorite wood elf! My first DnD Playable Character with an op stat of 18 in dexterity. Proud of this man.</div>
+    </div>
+  </div>
+</body>
+
+<footer style="center">
+  <marquee direction = "right"> All Rights Reserved 2022. Do Not Repost Without Permission. Raisha Manuel 2022. </marquee>
+</footer>
+</html>
